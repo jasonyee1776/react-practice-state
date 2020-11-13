@@ -1,5 +1,7 @@
 import React from 'react';
 import StarRating from './StarRating';
+import Review from './Review';
+
 
 const Course = (props) => {
   return (
@@ -12,9 +14,10 @@ const Course = (props) => {
       <h3>Course Rating</h3>
       {/* A self-contained star rating component */
       }
-
-
-      <StarRating /> 
+      <StarRating />
+      <Review 
+        handleAddReiview = { props.handleAddReiview }
+      /> 
     </div>
   );
 }
