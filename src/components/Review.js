@@ -16,11 +16,12 @@ class Review extends Component {
     // create function handle form submit to update Course data 
     handleSubmit = (e) => {
         e.preventDefault()
-        if (this.state.review.trim() == '') {
+        if (this.state.review.trim() === '') {
             alert('You can not submit an empty review')
         } else {
             //this.props.handleAddReiview()
-            console.log('not empty')
+           
+            alert("good job you successfully submitted")
         }
     }
 
