@@ -16,7 +16,7 @@ const Course = (props) => {
       }
       <StarRating />
       <Review 
-        handleAddReiview = { props.handleAddReiview }
+        handleAddReview = { props.handleAddReview }
       /> 
     </div>
   );

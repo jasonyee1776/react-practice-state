@@ -4,7 +4,7 @@ import Course from './Course';
 const App = (props) => {
   
   const handleAddReview = () => {
-    console.log(props.course)
+    console.dir("props.course")
   }
 
   return (
