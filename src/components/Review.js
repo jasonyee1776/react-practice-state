@@ -9,7 +9,7 @@ class Review extends Component {
 
     handleReivew = (e) => {
         console.log(e.target.value)
-        this.setState({reivew: e.target.value })
+        this.setState({ reivew: e.target.value })
     }
 
 
@@ -18,6 +18,7 @@ class Review extends Component {
         e.preventDefault()
         if (this.state.review.trim() === '') {
             alert('You can not submit an empty review')
+            return false;
         } else {
             //this.props.handleAddReiview()
            
