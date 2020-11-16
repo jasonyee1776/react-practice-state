@@ -2,10 +2,6 @@ import React from 'react';
 import Course from './Course';
 
 const App = (props) => {
-  
-  const handleAddReview = () => {
-    console.dir("props.course")
-  }
 
   return (
     <div className="container">
@@ -13,7 +9,7 @@ const App = (props) => {
         <Course
           {...course}
           key={course.id}
-          handleAddReview={handleAddReview}
+          handleAddReview={props.handleAddReview}
         />      
       )}
     </div>

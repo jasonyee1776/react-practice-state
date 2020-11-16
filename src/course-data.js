@@ -37,4 +37,8 @@ const courses = [
   },
 ];
 
+const handleAddReview = () => {
+  console.log("hi")
+}
+
 export default courses;

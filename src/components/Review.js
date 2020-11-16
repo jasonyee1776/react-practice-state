@@ -16,7 +16,6 @@ class Review extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
         if (this.state.review.trim() === "") {
-            console.log(this.state.review)
             alert('You can not submit an empty review')
             return false;
         } else {
