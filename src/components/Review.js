@@ -26,18 +26,21 @@ class Review extends Component {
     render() {
         console.log(this.state.review)
         return (
-            <form onSubmit={this.handleSubmit}>
-                <input 
-                    type='text'
-                    placeholder='Comment...'
-                    onChange={this.handleReivew}
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <input 
+                        type='text'
+                        placeholder='Comment...'
+                        onChange={this.handleReivew}
 
-                />
-                <input 
-                    type='submit'
-                    value='Leave Review' 
-                />
-            </form>
+                    />
+                    <input 
+                        type='submit'
+                        value='Leave Review' 
+                    />
+                </form>
+                
+            </div>
         )
     };
 }
