@@ -1,3 +1,7 @@
+const handleAddReview = () => {
+  console.log("hi")
+}
+
 const courses = [
   {
     id: '1',
@@ -37,8 +41,4 @@ const courses = [
   },
 ];
 
-const handleAddReview = () => {
-  console.log("hi")
-}
-
-export default courses;
+export {courses, handleAddReview};

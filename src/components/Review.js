@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import Comments from './Comments';
 
 class Review extends Component {
     state = {
-        review: ''
+        review: '',
+        isSubmitted: false
     }
 
     // create function to update state from input value
@@ -19,7 +21,11 @@ class Review extends Component {
             alert('You can not submit an empty review')
             return false;
         } else {
-            this.props.handleAddReview()
+            this.props.handleAddReview();
+            this.setState({
+                isSubmitted: !this.state.isSubmitted,
+                review: ''
+            })
         }
     }
 
@@ -32,6 +38,7 @@ class Review extends Component {
                         type='text'
                         placeholder='Comment...'
                         onChange={this.handleReivew}
+                        value={this.state.review}
 
                     />
                     <input 
@@ -39,7 +46,7 @@ class Review extends Component {
                         value='Leave Review' 
                     />
                 </form>
-                
+                {this.state.isSubmitted && <Comments review={this.state.review}/>}
             </div>
         )
     };
