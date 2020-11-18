@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Comments from './Comments';
 
+// Make <Review /> component the parent of Comments 
+
 class Review extends Component {
     state = {
         review: '',
