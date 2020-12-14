@@ -48,7 +48,6 @@ class Review extends Component {
                         value='Leave Review' 
                     />
                 </form>
-                {this.state.isSubmitted && <Comments review={this.state.review}/>}
             </div>
         )
     };
